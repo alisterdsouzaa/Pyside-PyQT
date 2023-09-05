@@ -1,0 +1,227 @@
+Param Address (Hex),Default Value (Decimal),Description
+0x01,8,No. Of Pole Pairs
+0x04,23,IPS Offset Angle
+0x08,13000,"IQ PID Kp gain, scaled by 1000"
+0x09,10,"IQ PID Ki gain, scaled by 1000"
+0x0A,600,"IQ PID saturation, scaled by 1000"
+0x0B,-600,"IQ PID saturation, scaled by 1000"
+0x0C,13000,"ID PID Kp gain, scaled by 1000"
+0x0D,10,"ID PID Ki gain, scaled by 1000"
+0x0E,900,"ID PID saturation, scaled by 1000"
+0x0F,-900,"ID PID saturation, scaled by 1000"
+0x10,1,IQ sign convension parameter
+0x11,0,ID sign convension parameter
+0x12,550,IQ Ctable
+0x13,690,ID Ctable
+0x14,1,Postion Sensor selection (0/1)
+0x15,2096,Current sensor Offset
+0x16,450,SW Overcurrent Limit in Amps
+0x17,2200,Gain of Current sense ADC in mv/A
+0x18,2080,IPS ADC Offset counts (out of 4096)
+0x19,2500,Total IPS ADC Swing counts (out of 4096)
+0x1a,2200,Deadtime in nS
+0x1b,100,PWM time in uS
+0x1c,360000,Max current for obtaining peak torque in milli-amp
+0x1d,3600,nano-ohm
+0x1e,4000,nano-Henry
+0x1f,48,Nominal DC battery voltage
+0x200,1500,Throttle Limiter Index 0
+0x201,1500,Throttle Limiter Index 1
+0x202,1500,Throttle Limiter Index 2
+0x203,1500,Throttle Limiter Index 3
+0x204,1500,Throttle Limiter Index 4
+0x205,1500,Throttle Limiter Index 5
+0x206,1500,Throttle Limiter Index 6
+0x207,1400,Throttle Limiter Index 7
+0x208,1300,Throttle Limiter Index 8
+0x209,1200,Throttle Limiter Index 9
+0x20A,1100,Throttle Limiter Index 10
+0x20B,1100,Throttle Limiter Index 11
+0x20C,1100,Throttle Limiter Index 12
+0x20D,1100,Throttle Limiter Index 13
+0x20E,1100,Throttle Limiter Index 14
+0x20F,1100,Throttle Limiter Index 15
+0x400,202,Product ID
+0x401,2,Motor ID
+0x402,120,Torque Limit
+0x403,0,Operating Quadrant
+0x500,10,DC Line Lower cutoff voltage
+0x501,70,DC Line Upper cutoff voltage
+0x502,4097,DC Line current Limit in Amp
+0x503,0,Throttle selection(0/43214321)
+0x504,321321,GPIO Selection (0/321321)
+0x506,60,Battery Cooling time in seconds
+0x507,65,Battery Max current Limit in Amp
+0x508,5,Battery Current Allowable time in seconds
+0x509,40,Rated Battery Current in Amperes
+0x50A,5,Battery current derating Time in seconds
+0x50B,3600,rated Motor Power in watts
+0x50C,15000,"SetPoint to Torque ration,scaled by 100"
+0x50D,170,DC Voltage conversion constant
+0x50E,2419,DC Currnet conversion constant
+0x50F,900,Regen Braking speed limit in RPM
+0x510,200,Neutral Regen SetPoint
+0x511,750,Nutral Regen Throttle Value Higher Limit
+0x512,680,Nutral Regen Throttle Value Lower Limit
+0x513,2092,DC Line current sensor Offset 
+0x600,10,error speed value given by sensors even motor is not running
+0x601,700,Throttle Neutral ADC value
+0x602,2850,Throttle ADC Max value
+0x603,650,Throttle ADC Min value
+0x604,40,"throttle Multiplier in reverse mode,scaled by 100"
+0x605,50,500mS
+0x606,75,"throttle multiplier in Eco mode,scaled by 100"
+0x607,100,"throttle multiplier in Power mode , scaled by 100"
+0x608,150,1500mS .cruise button press time
+0x609,5,50mS rebounce time
+0x60A,100,Throttle value in Drag mode
+0x60B,400,Less than 20RPM to enter Hill assist mode
+0x60C,970,"IIR Filter coefficient ,scaled by 1000"
+0x60D,110,Board temperature Limit L3
+0x60E,100,Board temperature Limit L2
+0x60F,80,Board temperature Limit L1
+0x610,1050,SetPoint value for rated torque
+0x611,40,Setpont Deadband value
+0x612,120,Motor temperature Limit L3
+0x613,110,Motor temperature Limit L2
+0x614,90,Motor temperature Limit L1
+0x615,650,Throttle ADC Base Value
+0x616,2,SetPoint divider
+0x617,6000,Eco mode speed Limit
+0x618,680,Power Mode speed limit
+0x619,0,Active regen SetPoint 
+0x61A,1000,Active regen speed threshold
+0x61B,2,"Cruise mode Kp gain, scaled by 1000"
+0x61C,10,"Cruise mode Ki gain, scaled by 1000"
+0x61D,500,Max setpoint in cruise mode
+0x61E,500,RPM interval for interpolation
+0x61F,1500,Reverse mode speed limit in RPM
+0x620,2100,Throttle Raw ADC Swing in ADC counts
+0x700,1300,Throttle Map gain Param Index 0
+0x701,1300,Throttle Map gain Param Index 1
+0x702,1300,Throttle Map gain Param Index 2
+0x703,1300,Throttle Map gain Param Index 3
+0x704,1000,Throttle Map gain Param Index 4
+0x705,1000,Throttle Map gain Param Index 5
+0x706,1000,Throttle Map gain Param Index 6
+0x707,800,Throttle Map gain Param Index 7
+0x708,800,Throttle Map gain Param Index 8
+0x709,800,Throttle Map gain Param Index 9
+0x70A,800,Throttle Map gain Param Index 10
+0x70B,800,Throttle Map gain Param Index 11
+0x70C,800,Throttle Map gain Param Index 12
+0x70D,800,Throttle Map gain Param Index 13
+0x70E,800,Throttle Map gain Param Index 14
+0x70F,800,Throttle Map gain Param Index 15
+0x710,600,Throttle Map gain Param Index 16
+0x711,600,Throttle Map gain Param Index 17
+0x712,600,Throttle Map gain Param Index 18
+0x713,600,Throttle Map gain Param Index 19
+0x714,600,Throttle Map gain Param Index 20
+0x715,600,Throttle Map gain Param Index 21
+0x716,600,Throttle Map gain Param Index 22
+0x717,600,Throttle Map gain Param Index 23
+0x718,600,Throttle Map gain Param Index 24
+0x719,600,Throttle Map gain Param Index 25
+0x71A,600,Throttle Map gain Param Index 26
+0x71B,600,Throttle Map gain Param Index 27
+0x71C,600,Throttle Map gain Param Index 28
+0x71D,600,Throttle Map gain Param Index 29
+0x71E,600,Throttle Map gain Param Index 30
+0x71F,600,Throttle Map gain Param Index 31
+0x800,847,Motor Control LUT1 Index 0
+0x801,839,Motor Control LUT1 Index 1
+0x802,832,Motor Control LUT1 Index 2
+0x803,824,Motor Control LUT1 Index 3
+0x804,806,Motor Control LUT1 Index 4
+0x805,771,Motor Control LUT1 Index 5
+0x806,723,Motor Control LUT1 Index 6
+0x807,674,Motor Control LUT1 Index 7
+0x808,630,Motor Control LUT1 Index 8
+0x809,591,Motor Control LUT1 Index 9
+0x80A,555,Motor Control LUT1 Index 10
+0x80B,524,Motor Control LUT1 Index 11
+0x80C,496,Motor Control LUT1 Index 12
+0x80D,470,Motor Control LUT1 Index 13
+0x80E,447,Motor Control LUT1 Index 14
+0x80F,426,Motor Control LUT1 Index 15
+0x810,407,Motor Control LUT1 Index 16
+0x811,390,Motor Control LUT1 Index 17
+0x812,374,Motor Control LUT1 Index 18
+0x813,359,Motor Control LUT1 Index 19
+0x814,345,Motor Control LUT1 Index 20
+0x815,333,Motor Control LUT1 Index 21
+0x816,321,Motor Control LUT1 Index 22
+0x817,310,Motor Control LUT1 Index 23
+0x818,300,Motor Control LUT1 Index 24
+0x819,290,Motor Control LUT1 Index 25
+0x81A,281,Motor Control LUT1 Index 26
+0x81B,273,Motor Control LUT1 Index 27
+0x81C,265,Motor Control LUT1 Index 28
+0x81D,258,Motor Control LUT1 Index 29
+0x81E,251,Motor Control LUT1 Index 30
+0x81F,250,Motor Control LUT1 Index 31
+0x900,3204,Motor Control LUT2 Index 0
+0x901,3648,Motor Control LUT2 Index 1
+0x902,3991,Motor Control LUT2 Index 2
+0x903,4278,Motor Control LUT2 Index 3
+0x904,4485,Motor Control LUT2 Index 4
+0x905,4559,Motor Control LUT2 Index 5
+0x906,4492,Motor Control LUT2 Index 6
+0x907,4366,Motor Control LUT2 Index 7
+0x908,4223,Motor Control LUT2 Index 8
+0x909,4074,Motor Control LUT2 Index 9
+0x90A,3929,Motor Control LUT2 Index 10
+0x90B,3791,Motor Control LUT2 Index 11
+0x90C,3660,Motor Control LUT2 Index 12
+0x90D,3537,Motor Control LUT2 Index 13
+0x90E,3421,Motor Control LUT2 Index 14
+0x90F,3312,Motor Control LUT2 Index 15
+0x910,3210,Motor Control LUT2 Index 16
+0x911,3115,Motor Control LUT2 Index 17
+0x912,3025,Motor Control LUT2 Index 18
+0x913,2940,Motor Control LUT2 Index 19
+0x914,2861,Motor Control LUT2 Index 20
+0x915,2786,Motor Control LUT2 Index 21
+0x916,2716,Motor Control LUT2 Index 22
+0x917,2649,Motor Control LUT2 Index 23
+0x918,2587,Motor Control LUT2 Index 24
+0x919,2528,Motor Control LUT2 Index 25
+0x91A,2472,Motor Control LUT2 Index 26
+0x91B,2419,Motor Control LUT2 Index 27
+0x91C,2369,Motor Control LUT2 Index 28
+0x91D,2322,Motor Control LUT2 Index 29
+0x91E,2277,Motor Control LUT2 Index 30
+0x91F,2230,Motor Control LUT2 Index 31
+0xA00,90,Field Weakening LUT Index 0
+0xA01,87,Field Weakening LUT Index 1
+0xA02,84,Field Weakening LUT Index 2
+0xA03,81,Field Weakening LUT Index 3
+0xA04,78,Field Weakening LUT Index 4
+0xA05,75,Field Weakening LUT Index 5
+0xA06,72,Field Weakening LUT Index 6
+0xA07,69,Field Weakening LUT Index 7
+0xA08,67,Field Weakening LUT Index 8
+0xA09,65,Field Weakening LUT Index 9
+0xA0A,63,Field Weakening LUT Index 10
+0xA0B,61,Field Weakening LUT Index 11
+0xA0C,60,Field Weakening LUT Index 12
+0xA0D,59,Field Weakening LUT Index 13
+0xA0E,58,Field Weakening LUT Index 14
+0xA0F,57,Field Weakening LUT Index 15
+0xA10,56,Field Weakening LUT Index 16
+0xA11,55,Field Weakening LUT Index 17
+0xA12,54,Field Weakening LUT Index 18
+0xA13,53,Field Weakening LUT Index 19
+0xA14,52,Field Weakening LUT Index 20
+0xA15,51,Field Weakening LUT Index 21
+0xA16,50,Field Weakening LUT Index 22
+0xA17,49,Field Weakening LUT Index 23
+0xA18,48,Field Weakening LUT Index 24
+0xA19,47,Field Weakening LUT Index 25
+0xA1A,46,Field Weakening LUT Index 26
+0xA1B,45,Field Weakening LUT Index 27
+0xA1C,45,Field Weakening LUT Index 28
+0xA1D,45,Field Weakening LUT Index 29
+0xA1E,45,Field Weakening LUT Index 30
+0xA1F,45,Field Weakening LUT Index 31
